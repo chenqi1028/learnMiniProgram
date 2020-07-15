@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:'chenqi',
+    age:18,
+    students:[
+      {id:1,name:'cq0',age:18},
+      {id:2,name:'cq1',age:20},
+      {id:3,name:'cq2',age:25}
+    ],
+    counter:0
+  },
+  handleAddClick() {
+    this.setData({
+      counter: this.data.counter + 1
+    })    
+  },
+  handleSubClick() {
+    this.setData({
+      counter: this.data.counter - 1
+    })    
   },
 
   /**
